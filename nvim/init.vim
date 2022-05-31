@@ -12,16 +12,16 @@ set termguicolors
 set number
 set numberwidth=4
 set norelativenumber
-set backspace=indent,eol,start "Allow backspace in insert mode
-set history=1000               "Store lots of :cmdline history
-set showcmd                    "Show incomplete cmds down the bottom
-set showmode                   "Show current mode down the bottom
-set gcr=a:blinkon0             "Disable cursor blink
+set backspace=indent,eol,start " Allow backspace in insert mode.
+set history=1000               " Store lots of :cmdline history.
+set showcmd                    " Show incomplete cmds down the bottom.
+set showmode                   " Show current mode down the bottom.
+set gcr=a:blinkon0             " Disable cursor blink.
 set visualbell
-set autoread                   "Reload files changed outside vim
-set mouse=a                    "Enable mouse interaction with vim
+set autoread                   " Reload files changed outside vim.
+set mouse=a                    " Enable mouse interaction with vim.
 set colorcolumn=81
-set hidden                     "Required for operations modifying multiple buffers like rename.
+set hidden                     " Required for operations modifying multiple buffers like rename.
 set lazyredraw
 
 " Open new split panes to right and bottom, which feels more natural.
@@ -60,14 +60,14 @@ filetype plugin indent on
 " Display tabs and trailing spaces visually.
 set list listchars=tab:\ \ ,trail:·
 
-set nowrap       "Don't wrap lines
-set linebreak    "Wrap lines at convenient points
+set nowrap    " Don't wrap lines.
+set linebreak " Wrap lines at convenient points.
 
 " === Folds ===
 
-set foldmethod=indent   "fold based on indent
-set foldnestmax=3       "deepest fold is 3 levels
-set nofoldenable        "dont fold by default
+set foldmethod=indent " Fold based on indent.
+set foldnestmax=3     " Deepest fold is 3 levels.
+set nofoldenable      " Dont fold by default.
 
 " === Scrolling ===
 
@@ -82,10 +82,10 @@ set nocursorcolumn
 
 " === Search ===
 
-set incsearch       " Find the next match as we type the search
-set hlsearch        " Highlight searches by default
-set ignorecase      " Ignore case when searching...
-set smartcase       " ...unless we type a capital
+set incsearch  " Find the next match as we type the search.
+set hlsearch   " Highlight searches by default.
+set ignorecase " Ignore case when searching...
+set smartcase  " ...unless we type a capital.
 
 " Tab Shortcuts.
 nnoremap tf :tabfirst<CR>
