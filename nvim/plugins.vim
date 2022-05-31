@@ -4,7 +4,7 @@ if empty(glob('.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin()
-  
+
 " Theme/Lightline plugins.
 Plug 'ajmwagar/vim-deus'
 Plug 'ajmwagar/lightline-deus'

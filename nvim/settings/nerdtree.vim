@@ -5,8 +5,8 @@ if has_key(g:plugs, 'nerdtree')
   let g:NERDTreeWinSize = 30
   let g:NERDTreeQuitOnOpen=1
 
-  " Disable nerdtree at vim startup ( `$vim .` ).
-  let g:NERDTreeHijackNetrw=0
+  " Enable nerdtree at vim startup ( `$vim .` ).
+  let g:NERDTreeHijackNetrw=1
 
   " Disable netrw since we are using nerdtree.
   let g:loaded_netrwPlugin = 1

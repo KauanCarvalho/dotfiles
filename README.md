@@ -7,5 +7,5 @@ Default settings for personal use.
 ## Installation
 
 ```bash
-  # coming soon.
+  $ bash -c "$(curl -fsSL https://raw.githubusercontent.com/KauanCarvalho/dotfiles/main/install.sh)"
 ```
