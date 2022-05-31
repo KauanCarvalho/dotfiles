@@ -10,6 +10,15 @@ backup_existing_file () {
   fi
 }
 
+ln_file_to_home_directory () {
+  source_full_path="$HOME/dotfiles/$1"
+  target_full_path=${2:-"$HOME/.$1"} # Default arg.
+
+  backup_existing_file "$target_full_path"
+
+  ln -s "$source_full_path" "$target_full_path"
+}
+
 install_nvim () {
   source_full_path="$HOME/dotfiles/nvim/*"
   target_full_path="$HOME/.config/nvim/"
@@ -21,9 +30,19 @@ install_nvim () {
   ln -s "$HOME/dotfiles/nvim/"* "$HOME/.config/nvim/"
 }
 
+install_dotfiles () {
+  dotfiles=( aliases )
+
+  for dotfile in "${dotfiles[@]}";
+  do
+    ln_file_to_home_directory "$dotfile"
+  done
+}
+
 main () {
   git clone https://github.com/KauanCarvalho/dotfiles.git "$HOME/dotfiles"
 
+  install_dotfiles
   install_nvim
 
   echo "Finished installation"
