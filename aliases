@@ -1,0 +1,40 @@
+alias gclone='git clone'
+alias gs='git status'
+alias gst='git stash'
+alias gstp='git stash pop'
+alias gsta='git stash apply'
+alias ga='git add'
+alias gaa='git add -A'
+alias gam='git ls-files --modified | xargs git add'
+alias gcom='git checkout master'
+alias gr='git rebase'
+alias gra='git rebase --abort'
+alias grc='git rebase --continue'
+alias gri='git rebase --interactive --autosquash'
+alias grom='git rebase origin/master'
+alias glo='git log --oneline'
+alias gb='git blame -M -w'
+alias gd='git diff'
+alias gf='git fetch'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gcf='git commit --fixup'
+alias gp='git push'
+alias gpull='git pull'
+alias gbclear="git fetch --all --prune; git branch --merged origin/master | grep -v \"\\*\" | grep -v \"\\  master\" | xargs -n 1 git branch -d"
+alias gpristine='git reset --hard && git clean -df'
+alias gre='git reset'
+alias gcherry='git cherry pick'
+
+alias current_branch='git rev-parse --abbrev-ref HEAD'
+
+alias vim=nvim
+alias be='bundle exec'
+alias berrspec='bundle exec rubocop && bundle exec rspec'
+alias rebocop='git diff-tree -r --no-commit-id --name-only HEAD | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop'
+
+alias ssstart='sudo systemctl start'
+alias ssstop='sudo systemctl stop'
+
+alias doc=docker
+alias docom=docker-compose
