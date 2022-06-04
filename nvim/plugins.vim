@@ -31,6 +31,7 @@ Plug 'tpope/vim-endwise', { 'for': ['ruby', 'eruby', 'elixir', 'eelixir'] }
 Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] }
 Plug 'vim-ruby/vim-ruby'
 Plug 'nelstrom/vim-textobj-rubyblock', { 'for': ['ruby', 'eruby'] }
+Plug 'kana/vim-textobj-user'
 
 " Elixir plugins.
 Plug 'mhinz/vim-mix-format', { 'for': ['elixir', 'eelixir'] }
