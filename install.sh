@@ -14,7 +14,7 @@ install_nvim () {
 
   mkdir -p "$HOME/.config/nvim"
 
-  ln -s "$HOME/studyspace/dotfiles/nvim/"* "$HOME/.config/nvim/"
+  ln -s "$HOME/dotfiles/nvim/"* "$HOME/.config/nvim/"
 }
 
 install_dotfiles () {
@@ -27,7 +27,7 @@ install_dotfiles () {
 }
 
 ln_file_to_home_directory () {
-  source_full_path="$HOME/studyspace/dotfiles/$1"
+  source_full_path="$HOME/dotfiles/$1"
   target_full_path=${2:-"$HOME/.$1"}
 
   if [ -e "$target_full_path" ]; then
