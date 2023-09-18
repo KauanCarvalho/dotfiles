@@ -18,7 +18,7 @@ install_nvim () {
 }
 
 install_dotfiles () {
-  dotfiles=( aliases asdfrc default-gems gemrc solargraph.yml )
+  dotfiles=( aliases asdfrc default-gems gemrc solargraph.yml wezterm.lua )
 
   for dotfile in "${dotfiles[@]}";
   do
