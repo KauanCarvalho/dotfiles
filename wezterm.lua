@@ -21,7 +21,8 @@ end
 
 -- For example, changing the color scheme:
 -- config.color_scheme = 'AdventureTime'
-config.color_scheme = 'Gruvbox dark, hard (base16)'
+-- config.color_scheme = 'Gruvbox dark, hard (base16)'
+config.color_scheme = 'nightfox'
 
 config.hide_tab_bar_if_only_one_tab = true
 

@@ -55,3 +55,7 @@ vim.keymap.set('v', '<M-l>', [[<Esc><C-w>l]], { noremap = true })
 -- Ctrl+W |: set width.
 -- Ctrl+W =: equalize width and height of all windows.
 
+-- Easy save or close files.
+vim.keymap.set('n', '<leader>w', ':w<cr>', { noremap = true })
+vim.keymap.set('n', '<leader>q', ':q<cr>', { noremap = true })
+
