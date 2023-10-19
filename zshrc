@@ -77,14 +77,14 @@ if [[ ! -d ~/.zsh/zsh-autosuggestions ]]
 then
   git clone https://github.com/zsh-users/zsh-autosuggestions "$HOME/.zsh/zsh-autosuggestions"
 fi
-source "$HOME/.zsh/zsh-autosuggestions"
+source "$HOME/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # zsh-syntax-highlighting.
 if [[ ! -d ~/.zsh/zsh-syntax-highlighting ]]
 then
  git clone https://github.com/zsh-users/zsh-syntax-highlighting "$HOME/.zsh/zsh-syntax-highlighting"
 fi
-source "$HOME/.zsh/zsh-syntax-highlighting"
+source "$HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # Enable theme/prompt pure.
 if [[ ! -d ~/.zsh/pure ]]
