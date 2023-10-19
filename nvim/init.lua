@@ -120,4 +120,3 @@ require('lazy').setup('plugins', {
   }
 })
 require('remap')
-

@@ -35,4 +35,3 @@ config.window_padding = {
 
 -- and finally, return the configuration to wezterm
 return config
-

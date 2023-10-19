@@ -22,4 +22,3 @@ return {
     vim.keymap.set('n', '<leader>h', builtin.oldfiles, { noremap = true })
   end
 }
-

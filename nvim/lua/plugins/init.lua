@@ -8,4 +8,3 @@ return {
   { 'tpope/vim-bundler', ft = { 'ruby', 'eruby' } },
   { 'vim-ruby/vim-ruby', ft = { 'ruby', 'eruby' } }
 }
-

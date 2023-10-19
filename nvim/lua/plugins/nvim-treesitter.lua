@@ -5,4 +5,3 @@ return {
     ts_update()
   end
 }
-

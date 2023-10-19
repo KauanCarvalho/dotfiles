@@ -15,4 +15,3 @@ reporters:
 plugins:
 - runtime
 max_files: 5000
-

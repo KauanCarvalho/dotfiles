@@ -115,4 +115,3 @@ return {
     vim.keymap.set('n', '<C-\\>', ':NvimTreeFindFileToggle<cr>', { noremap = true, silent = true })
   end
 }
-
