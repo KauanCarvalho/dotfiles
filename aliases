@@ -17,6 +17,9 @@ alias gcm='git commit -m'
 alias gp='git push'
 alias gpull='git pull'
 alias gre='git reset'
+alias grpo='git remote prune origin'
+alias glog='git log --graph --oneline'
+alias glos='git log --stat'
 
 alias vim=nvim
 alias be='bundle exec'
