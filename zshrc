@@ -44,6 +44,13 @@ setopt hist_verify
 # This option both imports new commands from the history file, and also causes your typed commands to be appended to the history file.
 setopt share_history
 
+# Speed up zsh completions.
+set -k
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+
 # Some Binds.
 bindkey '^P' up-history
 bindkey '^N' down-history
@@ -51,7 +58,7 @@ bindkey '^N' down-history
 # ASDF.
 if [[ ! -d ~/.asdf ]]
 then
-  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.13.1
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 fi
 
 . $HOME/.asdf/asdf.sh

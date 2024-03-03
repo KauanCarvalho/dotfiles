@@ -1,5 +1,5 @@
 return {
-  'lukas-reineke/indent-blankline.nvim',
+  "lukas-reineke/indent-blankline.nvim",
   config = function()
     local highlight = {
       "CursorColumn",
@@ -15,5 +15,5 @@ return {
     }
   end,
   lazy = true,
-  event = 'VeryLazy'
+  event = "VeryLazy"
 }
